@@ -22,7 +22,7 @@ st.title('Customer Churn Prediction')
 #input
 gender = st.selectbox('Gender', encoder_gender.classes_)
 geography = st.selectbox('Geography', onehotencoder_geo.categories_[0])
-age = st.slider('Age', min_value=0, max_value=100)
+age = st.slider('Age', min_value=18, max_value=100)
 tenure = st.slider('Tenure', min_value=0, max_value=10)
 balance = st.number_input('Balance', min_value=0.0)
 num_of_products = st.slider('Number of Products', min_value=1, max_value=4)
